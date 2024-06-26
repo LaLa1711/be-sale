@@ -1,0 +1,16 @@
+server:
+  port: 6969
+spring:
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;databaseName=pagesale
+    username: sa
+    password: 123
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    connection-properties: useUnicode=true;characterEncoding=UTF-8;
+  jpa:
+    database-platform: org.hibernate.dialect.SQLServerDialect
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl

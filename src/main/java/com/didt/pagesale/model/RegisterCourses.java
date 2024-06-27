@@ -34,13 +34,4 @@ public class RegisterCourses {
 
     @Column(name = "courses")
     private String courses;
-
-    @Column(name = "createdDate")
-    private Date createdDate;
-    @Column(name = "modifiedDate")
-    private Date modifiedDate;
-    @Column(name = "createdBy")
-    private String createdBy;
-    @Column(name = "modifiedBy")
-    private String modifiedBy;
 }
